@@ -8,3 +8,5 @@
   - name: print student data
     ansible.builtin.debug:
       msg: "Hello {{ Name }}, course: {{ Course }},  Fee: {{ Fee }}"
+
+
