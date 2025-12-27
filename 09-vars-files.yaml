@@ -10,7 +10,7 @@
 
 
   - name: print another student information
-    var:
+    vars:
       NAME: Suresh
       COURSE: CSE
       Address: karnataka
