@@ -1,0 +1,18 @@
+- name: Task level variables
+  hosts: local
+  connection: local
+  vars:
+    NAME: Thirumalesh
+    GROUP: ECE
+    AGE: 27
+  tasks: 
+  - name: print student information
+    ansible.builtin.debug:
+      msg: "Hello {{ NAME }}, group is {{ GROUP }},  Age: {{ AGE }}"
+
+
+  - name: print another student information
+    vars:
+      NAME: Bestfriend
+    ansible.builtin.debug:
+      msg: "Hello {{ NAME }}, group is {{ GROUP }},  Age:{{ AGE }}"   
