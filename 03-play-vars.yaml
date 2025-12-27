@@ -1,0 +1,10 @@
+- name: play level variables
+  hosts: frontend
+  vars:
+    Name: Manish
+    Course: MBBS
+    Fee: 5Lakhs
+  tasks:
+  - name: print student data
+    ansible.builtin.debug:
+      msg: "Hello {{ Name }}, course: {{ Course }},  Fee: {{ Fee }}"
