@@ -9,3 +9,8 @@
   - name: print student information
     ansible.builtin.debug:
       msg: "Hello {{ NAME }}, group is {{ GROUP }},  Age: {{ AGE }}"
+
+
+  - name: print student information
+    ansible.builtin.debug:
+      msg: "Hello {{ NAME }}, group is {{ GROUP }},  Age:{{ AGE }}"    
