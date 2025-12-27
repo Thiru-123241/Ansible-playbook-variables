@@ -8,7 +8,7 @@
   tasks:
   - name: first course details
     ansible.builtin.debug:
-      msg: "course name is {{ NAME }}, duration: {{ DURATION }}  fee: {{ FEE}}
+      msg: "course name is {{ NAME }}, duration: {{ DURATION }}  fee: {{ FEE }}""
 
 
   - name: second course details
@@ -16,19 +16,19 @@
       NAME: Java
       FEE:  20K
     ansible.builtin.debug:
-      msg: "course name is {{ NAME }}, duration: {{ DURATION }}  fee: {{ FEE}}   
+      msg: "course name is {{ NAME }}, duration: {{ DURATION }}  fee: {{ FEE }}""   
 
 
   - name: Third course details
     ansible.builtin.debug:
-      msg: "course name is {{ NAME }}, duration: {{ DURATION }}  fee: {{ FEE}}  
+      msg: "course name is {{ NAME }}, duration: {{ DURATION }}  fee: {{ FEE }}""  
 
 
   - name: Fourth course details
     vars:
       NAME: Terraform
     ansible.builtin.debug:
-      msg: "course name is {{ NAME }}, duration: {{ DURATION }}  fee: {{ FEE}}    
+      msg: "course name is {{ NAME }}, duration: {{ DURATION }}  fee: {{ FEE }}""    
 
 
 
@@ -36,4 +36,4 @@
     vars:
       FEE:  20K
     ansible.builtin.debug:
-      msg: "course name is {{ NAME }}, duration: {{ DURATION }}  fee: {{ FEE}}           
+      msg: "course name is {{ NAME }}, duration: {{ DURATION }}  fee: {{ FEE}}""           
