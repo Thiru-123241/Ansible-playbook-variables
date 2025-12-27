@@ -1,0 +1,39 @@
+- name: Task level variables
+  hosts: local
+  connection: local
+  vars:
+    NAME: python
+    DURATION: 15HRS
+    FEE: 10K
+  tasks:
+  - name: first course details
+    ansible.builtin.debug:
+      msg: "course name is {{ NAME }}, duration: {{ DURATION }}  fee: {{ FEE}}
+
+
+  - name: second course details
+    vars:
+      NAME: Java
+      FEE:  20K
+    ansible.builtin.debug:
+      msg: "course name is {{ NAME }}, duration: {{ DURATION }}  fee: {{ FEE}}   
+
+
+  - name: Third course details
+    ansible.builtin.debug:
+      msg: "course name is {{ NAME }}, duration: {{ DURATION }}  fee: {{ FEE}}  
+
+
+  - name: Fourth course details
+    vars:
+      NAME: Terraform
+    ansible.builtin.debug:
+      msg: "course name is {{ NAME }}, duration: {{ DURATION }}  fee: {{ FEE}}    
+
+
+
+  - name: Fifth course details
+    vars:
+      FEE:  20K
+    ansible.builtin.debug:
+      msg: "course name is {{ NAME }}, duration: {{ DURATION }}  fee: {{ FEE}}           
