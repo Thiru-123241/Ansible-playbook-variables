@@ -1,0 +1,33 @@
+- name: Variables from files
+  hosts: local
+  connection: local
+  vars_files:
+  - studentdata.yaml
+  tasks:
+  - name: print student information
+    ansible.builtin.debug:
+      msg: "My name is {{ NAME }}, course is {{ COURSE }} and address {{ Address }}"
+
+
+  - name: print another student information
+    var:
+      NAME: Suresh
+      COURSE: CSE
+      Address: karnataka
+    ansible.builtin.debug:
+      msg: "My name is {{ NAME }}, course is {{ COURSE }} and address {{ Address }}"    
+
+
+
+- name: global variables
+  hosts: local
+  connection: local
+  vars:
+    NAME: Ramesh
+    COURSE: Mech
+    Address: Tamilnadu 
+  
+  tasks:
+  - name: print student information
+    ansible.builtin.debug:
+      msg: "My name is {{ NAME }}, course is {{ COURSE }} and address {{ Address }}"      
