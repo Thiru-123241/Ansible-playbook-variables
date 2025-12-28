@@ -3,4 +3,4 @@
   tasks:
   - name: print employee information
     ansible.builtin.debug:
-      msg: "my name is {{ NAME }}, and group: {{ GROUP }}  belongs to {{ STATE }}"
+      msg: "my name is {{ Name }} and group: {{ Group }}  belongs to {{ State }}"
