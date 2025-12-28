@@ -1,0 +1,6 @@
+- name: variables from inventory
+  hosts: backend
+  tasks: 
+  - name: print student information
+    ansible.builtin.debug:
+      msg: "Hello i am {{ NAME }}, studying {{ COURSE }} belongs to {{ STATE }}"
