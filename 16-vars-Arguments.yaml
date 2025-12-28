@@ -1,0 +1,7 @@
+- name: Variables from Args
+  hosts: local
+  connection: local
+  tasks:
+  - name: print employee information
+    ansible.builtin.debug:
+      msg: "my name is {{ NAME }}, and group: {{ GROUP }}  belongs to {{ state }}"
