@@ -1,0 +1,16 @@
+- name: check the number
+  hosts: frontend
+  vars_prompt:
+  - name: NUMBER
+    prompt: please enter your Number
+    private: false
+  tasks:
+  - name: check if the given number is greater than 100
+    ansible.builtin.debug:
+      msg: "Given number is {{ NUMBER }} greater than 100"
+    when: NUMBER > 100
+  
+  - name: check if the given number is lessthan than 100
+    ansible.builtin.debug:
+      msg: "Given number is {{ NUMBER}} lessthan than 100"
+    when: NUMBER < 100
