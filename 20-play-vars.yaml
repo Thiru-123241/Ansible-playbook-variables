@@ -1,0 +1,11 @@
+- name: play level variables
+  hosts: local
+  connection: local
+  vars:
+    NAME: "Data structures and algorithms"
+    COURSE: "software"
+    FEE: 5Lakhs
+  tasks:
+  - name: print student data
+    ansible.builtin.debug:
+      msg: "Hello {{ NAME }}, course: {{ COURSE }},  Fee: {{ FEE }}"
