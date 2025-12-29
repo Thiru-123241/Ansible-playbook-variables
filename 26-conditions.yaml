@@ -1,7 +1,7 @@
 - name: check the number
   hosts: frontend
   vars_prompt:
-  - name: NUMBER
+  - name: "NUMBER"
     prompt: please enter your Number
     private: false
   tasks:
