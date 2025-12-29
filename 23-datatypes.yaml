@@ -27,7 +27,7 @@
         English: Speak
         Hindi: Read
     ansible.builtin.debug:
-      msg: "My name is {{ Name }}, Age: {{ Age }}, Skills is {{ Skills }}, is_expert: {{ IS_Expert }}, Languages: {{ Languages }}"
+      msg: "My name is {{ Name }}, Age: {{ Age }}, Skills is {{ Skills }}, is_expert: {{ Is_Expert }}, Languages: {{ Languages }}"
     
 
       
