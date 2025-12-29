@@ -7,11 +7,11 @@
   - name: print if the number is greater than 100
     ansible.builtin.debug:
       msg: "Given number is {{ NUMBER }} grater than 100"
-    when: Number > 100  
+    when: NUMBER > 100  
 
 
   - name: prinf if the number is lessthan 100
     ansible.builtin.debug:
       msg: "Given number is {{ NUMBER }} is lessthan 100"
-    when: NUmber < 100  
+    when: NUMBER < 100  
         
