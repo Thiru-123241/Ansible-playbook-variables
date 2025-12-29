@@ -1,7 +1,7 @@
 - name: Datatypes
   hosts: local
   connection: local
-  var:
+  vars:
     Name: "Data structures and algorithms"   # string
     Hours: 120  # int
     Topics:  # List
