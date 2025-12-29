@@ -1,0 +1,23 @@
+- name: Datatypes
+  hosts: local
+  connection: local
+  var:
+    Name: "Data structures and algorithms"   # string
+    Hours: 120  # int
+    Topics:  # List
+    - Linux
+    - Ansible
+    - shell
+    - Docker
+    IS_LIVE: true # boolean
+    Concepts:   # Map or dictionary
+      CI: jenkins
+      Scripting: "shell, Ansible, Terraform, python"
+  tasks:
+  - name: print the course details
+    ansible.builtin.debug:
+      msg: " Course name is {{ Name }}, duration: {{ HOURS }}, Syllabus is {{ Topics }}, is live?: {{ IS_LIVE }}, concepts is {{ Concepts }}"
+       
+    
+
+  
