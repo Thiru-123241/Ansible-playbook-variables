@@ -1,0 +1,35 @@
+- name: Data types
+  hosts: local
+  connection: local
+  vars:
+    Name: Thirumalesh
+    Age: 27
+    State: Andhrapradesh
+  tasks:
+  - name: print employee Basic data
+    ansible.builtin.debug:
+      msg: "my Name is {{ Name }}, Age: {{ Age }}, state is {{ State }}"
+
+
+
+  - name: Print employee full data 
+    vars:
+      Name: "Hindupur Suresh"    # string
+      Age: 26    # int
+      Skills:   # List []
+      - Notepad
+      - Paint
+      - MS Excel
+      - Photoshop
+      Is_Expert: true  # Boolean
+      Languages: #  Map or dictionary
+        Telugu: Read, write, speak
+        English: Speak
+        Hindi: Read
+    ansible.builtin.debug:
+      msg: "My name is {{ Name }}, Age: {{ Age }}, Skills is {{ Skills }}, is_expert: {{ IS_Expert }}, Languages: {{ Languages }}"
+    
+
+      
+
+
